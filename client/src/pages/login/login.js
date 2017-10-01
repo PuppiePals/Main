@@ -1,25 +1,25 @@
 import React, { Component } from "react";
-import SignIn from "./components/SignIn";
-import SignUp from "./components/SignUp";
 
-render() {
+class LoginPage extends Component {
+  render() {
     return (
-      <Container fluid>
-        <Row>
-          <Col size="md-6">
-            <Jumbotron>
-              <h1>Welcome to puppyPals</h1>
-            </Jumbotron>
-            <form>
-            	<FormBtn>
-                Submit Here
-              	</FormBtn>
-            </form>
-          </Col>
-        </Row>
-      </Container>
+       <div className="container">
+         <div className="row">
+           <div className="col-md-6">
+             <div className="Jumbotron">
+               <h1>Welcome to puppyPals</h1>
+             </div>
+             <div className="form">
+               <div className="formbtn">
+                 Submit Here
+               </div>
+            </div>
+           </div>
+         </div>
+     </div>
     );
   }
 }
 
-export default login;
+
+export default LoginPage;
