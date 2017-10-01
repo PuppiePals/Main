@@ -7,7 +7,7 @@ class LoginPage extends Component {
          <div className="row">
            <div className="col-md-6">
              <div className="Jumbotron">
-               <h1>Welcome to puppyPals</h1>
+               <h1>Welcome to LoginPage</h1>
              </div>
              <div className="form">
                <div className="formbtn">
