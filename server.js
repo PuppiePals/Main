@@ -7,6 +7,8 @@ const PORT = process.env.PORT || 3000;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+app.use(express.static("./client/src/pages/login"));
+
 //Set up sequelize here instead of express.
 
 app.listen(PORT, function() {

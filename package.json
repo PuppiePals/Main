@@ -1,5 +1,5 @@
 {
-  "name": "main",
+  "name": "Main",
   "version": "1.0.0",
   "description": "Main repo for PuppyPals app",
   "main": "server.js",
@@ -11,10 +11,14 @@
     "type": "git",
     "url": "git+https://github.com/PuppiePals/Main.git"
   },
+  "keywords": [],
   "author": "Jane, Noriel, Alexis, Alex",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/PuppiePals/Main/issues"
   },
-  "homepage": "https://github.com/PuppiePals/Main#readme"
+  "homepage": "https://github.com/PuppiePals/Main#readme",
+  "dependencies": {
+    "express": "^4.16.1"
+  }
 }
