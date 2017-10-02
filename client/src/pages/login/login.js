@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class LoginPage extends Component {
   render() {
-    return (
+    return (   
        <div className="container">
          <div className="row">
            <div className="col-md-6">
