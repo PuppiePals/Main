@@ -1,16 +1,9 @@
-import React from "react";
-import "./footer.css";
-
-const Navbar = () =>
-	<nav>
-		<div className="main-nav">
-			<ul>
-				<li><a href="/">Home</a></li>
-				<li><a href="/user">User Profile</a></li>
-				<li><a href="/search">Search</a></li>
-				<li><a href="/signout">Sign Out</a></li>
-			</ul>
-		</div>
-	</nav>
-
-export default Navbar;
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
