@@ -6,38 +6,73 @@ const FormDog = () =>
     <div className="panel panel-default">
       <div className="panel-body">
 
-        <form id="dog_profile">
+        <div className="card">
           
-          <label htmlFor="age">Age: </label>
-          <input className="form-control" type="text" id="age"></input>
-              
-          <div className="doggender">
-            <label>Male: </label>
-            <input type="radio" name="male"></input>
-
-            <label>Female: </label>
-            <input type="radio" name="female"></input>
+          <div className="card-header">
+            Create Dog Profile
           </div>
-
-          <div className="dogsize">
-            <label>Small (1-20 lbs) </label>
-            <input type="radio" name="small"></input>
-
-            <label>Medium (21-60 lbs) </label>
-            <input type="radio" name="medium"></input>
+          
+          <div className="card-body"> 
         
-            <label>Large (61 lbs and up) </label>
-            <input type="radio" name="large"></input>
+            <form>
+              <label htmlFor="age">Name: </label>
+              <div className="col-4">
+                <input className="form-control" type="text" id="age" size = "2" maxlength = "25"></input>
+              </div>
+            </form>
+                
+            <form>
+              <label htmlFor="age">Age: </label>
+              <div className="col-4">
+                <input className="form-control" type="text" id="age" maxlength = "2"></input>
+              </div>
+            </form>
+
+            <div className="doggender">
+              <form>
+                <br />
+                <h6 className="card-text">Gender: </h6> 
+                <label className="radio-inline"> 
+                  <input type="radio" className="male" />    Male    .
+                </label>
+                <label className="radio-inline"> 
+                  <input type="radio" name="female" />    Female  
+                </label>
+              </form>
+            </div>
+
+            <div className="dogsize">
+              <form>
+                <br />
+                <h6 className="card-text">Size: </h6>
+                <label className="radio-inline">
+                  <input type="radio" className="small" />    Small (1-20 lbs)    . 
+                </label>
+                <label className="radio-inline"> 
+                  <input type="radio" className="medium" />    Medium (21-60 lbs)    .
+                </label>
+                <label className="radio-inline"> 
+                  <input type="radio" className="large" />    Large (61 lbs and up)  
+                </label>
+              </form>  
+
+            </div>
+
+            <div className="dogpersonality">
+              <form>
+                <br />
+                <label htmlFor="Comments">Personality: </label>
+                <textarea className="form-control" rows="4" id="Comments"></textarea>
+              </form>
+            </div>
+
+            <br />
+            <a href="/formparent" className="btn btn-primary">Done</a>
+
           </div>
+        </div>
 
-          <label htmlFor="Comments">Personality: </label>
-          <textarea className="form-control" rows="5" id="Comments"></textarea>
-        
-          <button type="button" id="formdog">Done</button>
-
-        </form>
-
-      </div>
+        </div>
     </div>
   </div>
 

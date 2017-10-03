@@ -13,11 +13,11 @@ const Navbar = () =>
 	        		<a className="nav-link" href="/">Home </a>
 	      		</li>   
 	   			<li className="nav-item">
+	          		<a className="nav-link" href="/formdog">Dog Profile</a>
+	      		</li><li className="nav-item">
 	          		<a className="nav-link" href="/formparent">Human Profile</a>
 	      		</li>
-	      		<li className="nav-item">
-	          		<a className="nav-link" href="/formdog">Dog Profile</a>
-	      		</li>
+
 	       		<li className="nav-item">
 	        		<a className="nav-link" href="/signout">Sign Out</a>
 	      		</li>
