@@ -1,35 +1,35 @@
 import React from "react";
 
-const Form_Parent = () =>
+const FormParent = () =>
+
   <div className="container">
     <div className="panel panel-default">
-
       <div className="panel-body">
 
         <form id="parent_profile">
-          //Name
-          <label for="FName">First Name:</label><br>
-          <input className="form-control" type="text" id="fname"><br>
-          <label for="LName">Last Name:</label><br>
-          <input className="form-control" type="text" id="lname"><br>
 
-          //Zip
-          <label for="Zip">Zip:</label><br>
-          <input className="form-control" type="text" id="zip"><br>
+          <label htmlFor="FName">First Name:</label>
+          <input className="form-control" type="text" id="fname"></input>
+          
+          <label for="LName">Last Name:</label>
+          <input className="form-control" type="text" id="lname"></input>
 
-          //Phone
-          <label for="Phone">Phone:</label><br>
-          <input className="form-control" type="text" id="phone"><br>
+          <label for="Zip">Zip:</label>
+          <input className="form-control" type="text" id="zip"></input>
 
-          //Email
-          <label for="Email">Email:</label><br>
-          <input className="form-control" type="text" id="email"><br>
+          <label for="Phone">Phone:</label>
+          <input className="form-control" type="text" id="phone"></input>
 
-          //Comments
-          <br><label for="Comments">Comments:</label><br>
+          <label for="Email">Email:</label>
+          <input className="form-control" type="text" id="email"></input>
+
+          <label htmlFor="Comments">Comments:</label>
           <textarea className="form-control" rows="5" id="Comments"></textarea>
 
+          <button type="button" id="formparent">Done</button>
+
         </form>
+      
       </div>
     </div>
   </div>

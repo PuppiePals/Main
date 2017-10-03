@@ -1,69 +1,42 @@
 import React from "react";
 
-const Form_Dog = () =>
+const FormDog = () =>
+
   <div className="container">
     <div className="panel panel-default">
-
       <div className="panel-body">
+
         <form id="dog_profile">
-          //Age
-          <label for="age">Age:</label><br>
-          <input className="form-control" type="text" id="age"><br>
-          //Weight Range
-            // <select data-placeholder="" className="chosen-select" id="age">
-            // <option value="">Select an option</option>
-            // <option value="S">Small(1lbs - 20lbs)</option>
-            // <option value="Y">Medium(21lbs - 60lbs)</option>
-            // <option value="O">Large(61lbs and up)</option>
-            // </select>
-            //Male or Female
-            <div className="radio">
-              <label><input type="radio" name="mfradio">Male</label>
-            </div>
-            <div className="radio">
-              <label><input type="radio" name="mfradio">Female</label>
-            </div>
+          
+          <label htmlFor="age">Age: </label>
+          <input className="form-control" type="text" id="age"></input>
+              
+          <div className="doggender">
+            <label>Male: </label>
+            <input type="radio" name="male"></input>
 
-            <div className="radio">
-              <label><input type="radio" name="sizeradio">Small(1 lb - 20 lbs)</label>
-            </div>
-            <div className="radio">
-              <label><input type="radio" name="sizeradio">Medium(21 lbs - 60 lbs)</label>
-            </div>
-            <div className="radio">
-              <label><input type="radio" name="sizeradio">Large(60 lbs and up)</label>
-            </div>
+            <label>Female: </label>
+            <input type="radio" name="female"></input>
+          </div>
 
+          <div className="dogsize">
+            <label>Small (1-20 lbs) </label>
+            <input type="radio" name="small"></input>
 
-          //Personality
-          <br><label for="Comments">Personality:</label><br>
+            <label>Medium (21-60 lbs) </label>
+            <input type="radio" name="medium"></input>
+        
+            <label>Large (61 lbs and up) </label>
+            <input type="radio" name="large"></input>
+          </div>
+
+          <label htmlFor="Comments">Personality: </label>
           <textarea className="form-control" rows="5" id="Comments"></textarea>
+        
+          <button type="button" id="formdog">Done</button>
 
         </form>
-        <form id="parent_profile">
-          //Name
-          <label for="FName">First Name:</label><br>
-          <input className="form-control" type="text" id="fname"><br>
-          <label for="LName">Last Name:</label><br>
-          <input className="form-control" type="text" id="lname"><br>
 
-          //Zip
-          <label for="Zip">Zip:</label><br>
-          <input className="form-control" type="text" id="zip"><br>
-
-          //Phone
-          <label for="Phone">Phone:</label><br>
-          <input className="form-control" type="text" id="phone"><br>
-
-          //Email
-          <label for="Email">Email:</label><br>
-          <input className="form-control" type="text" id="email"><br>
-
-          //Comments
-          <br><label for="Comments">Comments:</label><br>
-          <textarea className="form-control" rows="5" id="Comments"></textarea>
-
-        </form>
       </div>
     </div>
   </div>

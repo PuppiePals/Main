@@ -8,7 +8,8 @@ const mysql = require("mysql");
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.use(express.static("./client/src/pages/login"));
+app.use(express.static("client/build"));
+
 
 // Require Schemas
 // var Article = require("./server/model");

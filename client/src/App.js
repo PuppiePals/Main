@@ -38,7 +38,10 @@ import PlayMateDescriptionPage from './pages/detailedplaymatedescription';
 import CreatedDogProfilePage from './pages/createdogprofile';
 import SearchResultsPage from './pages/searchresultspage';
 import Nav from './components/Navbar';
-import Footer from './components/Footer'
+import Footer from './components/Footer';
+import FormDog from './components/FormDog';
+import FormParent from './components/FormParent';
+
 
 const App = () =>
   <Router>
@@ -47,10 +50,13 @@ const App = () =>
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/login" component={LoginPage} />
+        <Route exact path="/formparent" component={FormParent} />
+        <Route exact path="/formdog" component={FormDog} />
         <Route exact path="/playmate" component={PlayMateDescriptionPage} />
         <Route exact path="/createdogprofile" component={CreatedDogProfilePage} />
         <Route exact path="/search" component={SearchResultsPage} />
       </Switch>
+      <Footer />
     </div>
   </Router>;
 
