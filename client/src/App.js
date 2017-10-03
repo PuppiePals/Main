@@ -6,6 +6,7 @@ import PlayMateDescriptionPage from './pages/detailedplaymatedescription';
 import CreatedDogProfilePage from './pages/createdogprofile';
 import SearchResultsPage from './pages/searchresultspage';
 import Nav from './components/Navbar';
+import Footer from './components/Footer'
 
 
 
@@ -19,6 +20,7 @@ class App extends Component {
           <PlayMateDescriptionPage />
           <CreatedDogProfilePage />
           <SearchResultsPage />
+          <Footer />
         </div>
     );
   }
