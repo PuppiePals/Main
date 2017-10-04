@@ -1,35 +1,55 @@
 import React from "react";
+// import 
 
-const Form_Parent = () =>
-  <div className="container">
+const FormParent = () =>
+
+  <div className="container col-6">
     <div className="panel panel-default">
-
       <div className="panel-body">
 
-        <form id="parent_profile">
-          //Name
-          <label for="FName">First Name:</label><br>
-          <input className="form-control" type="text" id="fname"><br>
-          <label for="LName">Last Name:</label><br>
-          <input className="form-control" type="text" id="lname"><br>
+        <div className="card">
+          
+          <div className="card-header">
+            Create Parent Profile
+          </div>
+          
+          <div className="card-body"> 
 
-          //Zip
-          <label for="Zip">Zip:</label><br>
-          <input className="form-control" type="text" id="zip"><br>
+            <form id="parentprofile">
 
-          //Phone
-          <label for="Phone">Phone:</label><br>
-          <input className="form-control" type="text" id="phone"><br>
+              <label htmlFor="parentfirstname">First Name:</label>
+              <input className="form-control" type="text" id="parentfirstname"></input>
+          
+              <label htmlFor="parentlastname">Last Name:</label>
+              <input className="form-control" type="text" id="parentlastname"></input>
 
-          //Email
-          <label for="Email">Email:</label><br>
-          <input className="form-control" type="text" id="email"><br>
+              <label htmlFor="parentzip">Zip:</label>
+              <input className="form-control" type="text" id="parentzip"></input>
 
-          //Comments
-          <br><label for="Comments">Comments:</label><br>
-          <textarea className="form-control" rows="5" id="Comments"></textarea>
+              <label htmlFor="parentphone">Phone:</label>
+              <input className="form-control" type="text" id="parentphone"></input>
 
-        </form>
+              <label htmlFor="parentemail">Email:</label>
+              <input className="form-control" type="text" id="parentemail"></input>
+
+              <label htmlFor="parentcomments">Comments:</label>
+              <textarea className="form-control" rows="4" id="parentcomments"></textarea>
+
+              <br />
+              <div className="row">
+                <div className="col-6">
+                  <a className="btn btn-secondary float-left" href="/formdog" role="button">Previous</a>
+                </div>
+              
+                <div className="col-6">  
+                  <a class="btn btn-primary float-right" href="/formsearch" role="button">Save Profile</a>
+                </div>
+              </div>
+
+            </form>
+      
+          </div>
+        </div>
       </div>
     </div>
   </div>

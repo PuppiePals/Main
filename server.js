@@ -1,51 +1,36 @@
-const express = require("express");
-const bodyParser = require("body-parser");
-const app = express();
-const PORT = process.env.PORT || 3000;
-const mysql = require("mysql");
+//Node Dependencies
+var express = require("express");
+var bodyParser = require("body-parser");
+var session = require("express-session");
+
+// Requiring passport as we've configured it
+var passport = require("./config/passport");
+
+var PORT = process.env.PORT || 3000;
+var db = require("./models");
+
+var app = express();
 
 // Configure body parser for AJAX requests
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.use(express.static("./client/src/pages/login"));
+app.use(express.static("client/public"));
 
-// Require Schemas
-// var Article = require("./server/model");
+//To keep track of our user's login status
+app.use(session({ secret: "keyboard cat", resave: true, saveUninitialized: true }));
+app.use(passport.initialize());
+app.use(passport.session());
 
-//Set up sequelize here instead of mongoose.
-var connection = mysql.createConnection({
-  host: "localhost",
-  port: 3306,
-  // Your username
-  user: "root",
-  // Your password
-  password: "",
-  database: "puppypals_db"
-})
+require("./routes/application.js");
+require("./routes/home.js");
+require("./routes/index.js");
+require("./routes/user.js");
 
-connection.connect(function(err) {
-  if (err) {
-  	console.log("error loading: " + err.stack);
-  } else {
-  	console.log('Sequelize connection successful!');
-  }
-  
+// Syncing our database and logging a message to the user upon success
+db.sequelize.sync().then(function() {
+  app.listen(PORT, function() {
+    console.log("==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.", PORT, PORT);
+  });
 });
 
-
-
-
-
-// mongoose.connect("mongodb://admin:reactrocks@ds023593.mlab.com:23593/heroku_pg676kmk");
-// var db = mongoose.connection;
-// db.on("error", function(err) {
-//   console.log("Mongoose Error: ", err);
-// });
-// db.once("open", function() {
-//   console.log("Mongoose connection successful.");
-// });
-
-app.listen(PORT, function() {
-	console.log('🌎===> API Server new listening on Port: ' + PORT);
-});
