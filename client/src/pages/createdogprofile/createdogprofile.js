@@ -3,7 +3,7 @@ import FormDog from "../../components/FormDog/FormDog";
 
 class CreatedDogProfilePage extends Component {
   render() {
-    return (
+    return (  	
       <FormDog />
     );
   }

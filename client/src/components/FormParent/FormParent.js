@@ -1,35 +1,55 @@
 import React from "react";
+// import 
 
 const FormParent = () =>
 
-  <div className="container">
+  <div className="container col-6">
     <div className="panel panel-default">
       <div className="panel-body">
 
-        <form id="parent_profile">
-
-          <label htmlFor="FName">First Name:</label>
-          <input className="form-control" type="text" id="fname"></input>
+        <div className="card">
           
-          <label for="LName">Last Name:</label>
-          <input className="form-control" type="text" id="lname"></input>
+          <div className="card-header">
+            Create Parent Profile
+          </div>
+          
+          <div className="card-body"> 
 
-          <label for="Zip">Zip:</label>
-          <input className="form-control" type="text" id="zip"></input>
+            <form id="parentprofile">
 
-          <label for="Phone">Phone:</label>
-          <input className="form-control" type="text" id="phone"></input>
+              <label htmlFor="FName">First Name:</label>
+              <input className="form-control" type="text" id="fname"></input>
+          
+              <label for="LName">Last Name:</label>
+              <input className="form-control" type="text" id="lname"></input>
 
-          <label for="Email">Email:</label>
-          <input className="form-control" type="text" id="email"></input>
+              <label for="Zip">Zip:</label>
+              <input className="form-control" type="text" id="zip"></input>
 
-          <label htmlFor="Comments">Comments:</label>
-          <textarea className="form-control" rows="5" id="Comments"></textarea>
+              <label for="Phone">Phone:</label>
+              <input className="form-control" type="text" id="phone"></input>
 
-          <button type="button" id="formparent">Done</button>
+              <label for="Email">Email:</label>
+              <input className="form-control" type="text" id="email"></input>
 
-        </form>
+              <label htmlFor="Comments">Comments:</label>
+              <textarea className="form-control" rows="4" id="Comments"></textarea>
+
+              <br />
+              <div className="row">
+                <div className="col-6">
+                  <a className="btn btn-secondary float-left" href="/formdog" role="button">Previous</a>
+                </div>
+              
+                <div className="col-6">  
+                  <a class="btn btn-primary float-right" href="/formsearch" role="button">Save Profile</a>
+                </div>
+              </div>
+
+            </form>
       
+          </div>
+        </div>
       </div>
     </div>
   </div>

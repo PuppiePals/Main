@@ -41,7 +41,7 @@ import Nav from './components/Navbar';
 import Footer from './components/Footer';
 import FormDog from './components/FormDog';
 import FormParent from './components/FormParent';
-
+import FormSearch from './components/FormSearch';
 
 const App = () =>
   <Router>
@@ -50,11 +50,13 @@ const App = () =>
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/login" component={LoginPage} />
-        <Route exact path="/formparent" component={FormParent} />
         <Route exact path="/formdog" component={FormDog} />
+        <Route exact path="/formparent" component={FormParent} />
+        <Route exact path="/formsearch" component={FormSearch} />
+        <Route exact path="/searchresults" component={SearchResultsPage} />
         <Route exact path="/playmate" component={PlayMateDescriptionPage} />
-        <Route exact path="/createdogprofile" component={CreatedDogProfilePage} />
-        <Route exact path="/search" component={SearchResultsPage} />
+        <Route exact path="/viewprofile" component={CreatedDogProfilePage} />
+        
       </Switch>
       <Footer />
     </div>
