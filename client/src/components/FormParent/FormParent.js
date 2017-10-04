@@ -17,23 +17,23 @@ const FormParent = () =>
 
             <form id="parentprofile">
 
-              <label htmlFor="FName">First Name:</label>
-              <input className="form-control" type="text" id="fname"></input>
+              <label htmlFor="parentfirstname">First Name:</label>
+              <input className="form-control" type="text" id="parentfirstname"></input>
           
-              <label for="LName">Last Name:</label>
-              <input className="form-control" type="text" id="lname"></input>
+              <label htmlFor="parentlastname">Last Name:</label>
+              <input className="form-control" type="text" id="parentlastname"></input>
 
-              <label for="Zip">Zip:</label>
-              <input className="form-control" type="text" id="zip"></input>
+              <label htmlFor="parentzip">Zip:</label>
+              <input className="form-control" type="text" id="parentzip"></input>
 
-              <label for="Phone">Phone:</label>
-              <input className="form-control" type="text" id="phone"></input>
+              <label htmlFor="parentphone">Phone:</label>
+              <input className="form-control" type="text" id="parentphone"></input>
 
-              <label for="Email">Email:</label>
-              <input className="form-control" type="text" id="email"></input>
+              <label htmlFor="parentemail">Email:</label>
+              <input className="form-control" type="text" id="parentemail"></input>
 
-              <label htmlFor="Comments">Comments:</label>
-              <textarea className="form-control" rows="4" id="Comments"></textarea>
+              <label htmlFor="parentcomments">Comments:</label>
+              <textarea className="form-control" rows="4" id="parentcomments"></textarea>
 
               <br />
               <div className="row">
