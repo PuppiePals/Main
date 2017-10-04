@@ -2,7 +2,7 @@ import React from "react";
 
 const FormDog = () =>
 
-  <div className="container">
+  <div className="container col-6">
     <div className="panel panel-default">
       <div className="panel-body">
 
@@ -14,22 +14,19 @@ const FormDog = () =>
           
           <div className="card-body"> 
         
-            <form>
+            <form id="dogprofile">
               <label htmlFor="age">Name: </label>
               <div className="col-4">
-                <input className="form-control" type="text" id="age" size = "2" maxlength = "25"></input>
+                <input className="form-control" type="text" id="age" size = "2" maxLength = "25"></input>
               </div>
-            </form>
-                
-            <form>
+                     
+      
               <label htmlFor="age">Age: </label>
               <div className="col-4">
-                <input className="form-control" type="text" id="age" maxlength = "2"></input>
+                <input className="form-control" type="text" id="age" maxLength = "2"></input>
               </div>
-            </form>
-
-            <div className="doggender">
-              <form>
+      
+              <div className="doggender">
                 <br />
                 <h6 className="card-text">Gender: </h6> 
                 <label className="radio-inline"> 
@@ -38,11 +35,9 @@ const FormDog = () =>
                 <label className="radio-inline"> 
                   <input type="radio" name="female" />    Female  
                 </label>
-              </form>
-            </div>
+              </div>
 
-            <div className="dogsize">
-              <form>
+              <div className="dogsize">
                 <br />
                 <h6 className="card-text">Size: </h6>
                 <label className="radio-inline">
@@ -54,25 +49,23 @@ const FormDog = () =>
                 <label className="radio-inline"> 
                   <input type="radio" className="large" />    Large (61 lbs and up)  
                 </label>
-              </form>  
+               </div>
 
-            </div>
-
-            <div className="dogpersonality">
-              <form>
+              <div className="dogpersonality">
                 <br />
                 <label htmlFor="Comments">Personality: </label>
                 <textarea className="form-control" rows="4" id="Comments"></textarea>
-              </form>
-            </div>
+              </div>
 
-            <br />
-            <a href="/formparent" className="btn btn-primary">Done</a>
-
+              <br />
+              <div align="right">
+                <a href="/formparent" className="btn btn-primary">Next</a>
+              </div>
+            </form>
+          
           </div>
         </div>
-
-        </div>
+      </div>
     </div>
   </div>
 

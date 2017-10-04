@@ -1,47 +1,71 @@
 import React from "react";
 
-const Form_Search = () =>
-  <div className="container">
+const FormSearch = () =>
+  <div className="container col-6">
     <div className="panel panel-default">
-
       <div className="panel-body">
-        <form id="dog_profile">
-          //Age
-          <label for="age">Age:</label><br>
-          <input className="form-control" type="text" id="age"><br>
-          //Weight Range
-            // <select data-placeholder="" className="chosen-select" id="age">
-            // <option value="">Select an option</option>
-            // <option value="S">Small(1lbs - 20lbs)</option>
-            // <option value="Y">Medium(21lbs - 60lbs)</option>
-            // <option value="O">Large(61lbs and up)</option>
-            // </select>
-            //Male or Female
-            <div className="radio">
-              <label><input type="radio" name="mfradio">Male</label>
-            </div>
-            <div className="radio">
-              <label><input type="radio" name="mfradio">Female</label>
-            </div>
+        <div className="card">
+          <div className="card-header">
+            Search a Playmate
+          </div>
 
-            <div className="radio">
-              <label><input type="radio" name="sizeradio">Small(1 lbs - 20 lbs)</label>
-            </div>
-            <div className="radio">
-              <label><input type="radio" name="sizeradio">Medium(21 lbs - 60 lbs)</label>
-            </div>
-            <div className="radio">
-              <label><input type="radio" name="sizeradio">Large(60 lbs and up)</label>
-            </div>
+          <div className="card-body">
+            
+            <form id="dogprofile">
+          
+              <label htmlFor="age">Age: </label>
+                  <div className="col-4">
+                    <input className="form-control" type="text" id="age" maxLength = "2"></input>
+                  </div>
 
+                  <div className="doggender">
+                    <br />
+                    <h6 className="card-text">Gender: </h6> 
+                    <label className="radio-inline"> 
+                      <input type="radio" className="male" />    Male    .
+                    </label>
+                    <label className="radio-inline"> 
+                      <input type="radio" name="female" />    Female  
+                    </label>
+                  </div>
 
-          //Zip
-          <label for="Zip">Zip:</label><br>
-          <input className="form-control" type="text" id="zip"><br>
+                  <div className="dogsize">
+                    <br />
+                    <h6 className="card-text">Size: </h6>
+                    <label className="radio-inline">
+                      <input type="radio" className="small" />    Small (1-20 lbs)    . 
+                    </label>
+                    <label className="radio-inline"> 
+                      <input type="radio" className="medium" />    Medium (21-60 lbs)    .
+                    </label>
+                    <label className="radio-inline"> 
+                      <input type="radio" className="large" />    Large (61 lbs and up)  
+                    </label>
+                  </div>
+
+                  <label htmlFor="Zip">Zip:</label>
+                  <div className="col-4">
+                    <input className="form-control" type="text" id="zip" maxLength="5" />
+                  </div>
+                  
+                  <br />
+                  <div className="row">
+                    <div className="col-6">
+                      <a className="btn btn-secondary float-left" href="/formparent" role="button">Previous</a>
+                    </div>
+                  
+                    <div className="col-6">  
+                      <a class="btn btn-primary float-right" href="/searchresults" role="button">Search</a>
+                    </div>
+                  </div>
+          
 
         </form>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+
 
 export default FormSearch;
