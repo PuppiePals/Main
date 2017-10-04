@@ -51,6 +51,7 @@ const App = () =>
         <Route exact path="/createdogprofile" component={CreatedDogProfilePage} />
         <Route exact path="/search" component={SearchResultsPage} />
       </Switch>
+      <Footer />
     </div>
   </Router>;
 
