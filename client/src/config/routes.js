@@ -1,10 +1,9 @@
-// Inclue the React library
-var React = require("react");
+import React from "react";
+import ReactDOM from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+Add Comment
 
-// Include the react-router module
-var router = require("react-router");
 
-// Include the Route component
 var Route = router.Route;
 
 //  Include the IndexRoute (catch-all route)
