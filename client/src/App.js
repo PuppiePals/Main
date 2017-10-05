@@ -25,7 +25,6 @@ const App = () =>
         <Route exact path="/searchresults" component={SearchResultsPage} />
         <Route exact path="/playmate" component={PlayMateDescriptionPage} />
         <Route exact path="/viewprofile" component={CreatedDogProfilePage} />
-        
       </Switch>
       <Footer />
     </div>
