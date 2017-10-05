@@ -11,41 +11,41 @@ const FormSearch = () =>
 
           <div className="card-body">
             
-            <form id="dogprofile">
+            <form id="dogsearch">
           
-              <label htmlFor="age">Age: </label>
+              <label htmlFor="searchage">Age: </label>
                   <div className="col-4">
-                    <input className="form-control" type="text" id="age" maxLength = "2"></input>
+                    <input className="form-control" type="text" id="searchage" maxLength = "2"></input>
                   </div>
 
-                  <div className="doggender">
+                  <div className="searchgender">
                     <br />
                     <h6 className="card-text">Gender: </h6> 
                     <label className="radio-inline"> 
-                      <input type="radio" className="male" />    Male    .
+                      <input type="radio" id="searchmale" />    Male    .
                     </label>
                     <label className="radio-inline"> 
-                      <input type="radio" name="female" />    Female  
+                      <input type="radio" id="searchfemale" />    Female  
                     </label>
                   </div>
 
-                  <div className="dogsize">
+                  <div className="searchsize">
                     <br />
                     <h6 className="card-text">Size: </h6>
                     <label className="radio-inline">
-                      <input type="radio" className="small" />    Small (1-20 lbs)    . 
+                      <input type="radio" id="searchsmall" />    Small (1-20 lbs)    . 
                     </label>
                     <label className="radio-inline"> 
-                      <input type="radio" className="medium" />    Medium (21-60 lbs)    .
+                      <input type="radio" id="searchmedium" />    Medium (21-60 lbs)    .
                     </label>
                     <label className="radio-inline"> 
-                      <input type="radio" className="large" />    Large (61 lbs and up)  
+                      <input type="radio" id="searchlarge" />    Large (61 lbs and up)  
                     </label>
                   </div>
 
-                  <label htmlFor="Zip">Zip:</label>
+                  <label htmlFor="searchzip">Zip:</label>
                   <div className="col-4">
-                    <input className="form-control" type="text" id="zip" maxLength="5" />
+                    <input className="form-control" type="text" id="searchzip" maxLength="5" />
                   </div>
                   
                   <br />

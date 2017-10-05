@@ -1,25 +1,15 @@
 import React, { Component } from "react";
+import SignIn from "../../components/SignIn";
 
-class LoginPage extends Component {
+class Login extends Component {
   render() {
-    return (   
-       <div className="container">
-         <div className="row">
-           <div className="col-md-6">
-             <div className="Jumbotron">
-               <h1>Welcome to LoginPage</h1>
-             </div>
-             <div className="form">
-               <div className="formbtn">
-                 Submit Here
-               </div>
-            </div>
-           </div>
-         </div>
-     </div>
+    return (
+    <div>    
+        <SignIn />
+      </div>
     );
   }
 }
 
 
-export default LoginPage;
+export default Login;
