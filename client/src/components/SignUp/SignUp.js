@@ -1,7 +1,7 @@
 import React from "react";
 // import 
 
-const SignIn = () =>
+const SignUp = () =>
 
   <div className="container col-6">
     <div className="panel panel-default">
@@ -31,6 +31,8 @@ const SignIn = () =>
 
               <br />
 
+              <a href="/formdog" className="btn btn-primary">Register</a>
+
             </form>
       
           </div>
@@ -39,4 +41,4 @@ const SignIn = () =>
     </div>
   </div>
 
-export default SignIn;
+export default SignUp;
