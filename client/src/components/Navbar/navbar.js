@@ -4,7 +4,7 @@ const Navbar = () =>
 
 	<nav className="navbar navbar-expand-lg navbar-light bg-light">
 		<a className="navbar-brand" href="/">
-  	  		<img src="../assets/images/pawprint.png" width="30" height="30" alt=""></img>   
+  	  		<img src="http://res.cloudinary.com/time2emit/image/upload/v1507162161/pawprint_sszdst.png" width="30" height="30" alt=""></img>   
   	  	</a>
 	  	<div className="collapse navbar-collapse" id="navbarSupportedContent">
 
