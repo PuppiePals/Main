@@ -10,15 +10,18 @@ const SignUp = () =>
         <div className="card">
           
           <div className="card-header">
-            Sign In
+            Sign Up
           </div>
           
           <div className="card-body"> 
 
-            <form id="SignIn">
+            <form id="SignUp">
 
               <label htmlFor="firstname">First Name:</label>
-              <input className="form-control" type="text" id="userfirstname"></input>
+              <input 
+                className="form-control" 
+                type="text" 
+                id="userfirstname"></input>
 
               <label htmlFor="lastname">Last Name:</label>
               <input className="form-control" type="text" id="userlastname"></input>
