@@ -14,8 +14,6 @@ var app = express();
 // Configure body parser for AJAX requests
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(express.static("client/build/pages/login"));
-
 app.use(express.static("client/public"));
 
 //To keep track of our user's login status
@@ -23,10 +21,11 @@ app.use(session({ secret: "keyboard cat", resave: true, saveUninitialized: true 
 app.use(passport.initialize());
 app.use(passport.session());
 
-require("./routes/application.js");
-require("./routes/home.js");
-require("./routes/index.js");
-require("./routes/user.js");
+require("./routes/application.js")(app);
+// require("./routes/home.js")(app);
+// require("./routes/index.js")(app);
+// require("./routes/user.js")(app);
+
 
 // Syncing our database and logging a message to the user upon success
 db.sequelize.sync().then(function() {
