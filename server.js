@@ -2,6 +2,8 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var session = require("express-session");
+var methodOverride = require("method-override");
+var path = require("path");
 
 // Requiring passport as we've configured it
 var passport = require("./config/passport");
@@ -21,14 +23,17 @@ app.use(session({ secret: "keyboard cat", resave: true, saveUninitialized: true 
 app.use(passport.initialize());
 app.use(passport.session());
 
-require("./routes/application.js")(app)
-// require("./routes/home.js")(app);
-// require("./routes/index.js")(app);
-// require("./routes/user.js")(app);
+require("./routes/Dog-Routes.js")(app);
+// require("./routes/User-Routes.js")(app);
 
+
+var sequelizeForce = true;
+if(process.env.PORT){
+    sequelizeForce = false;
+}
 
 // Syncing our database and logging a message to the user upon success
-db.sequelize.sync().then(function() {
+db.sequelize.sync({ force: sequelizeForce }).then(function() {
   app.listen(PORT, function() {
     console.log("==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.", PORT, PORT);
   });
