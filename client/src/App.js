@@ -11,24 +11,27 @@ import Footer from './components/Footer';
 import FormDog from './components/FormDog';
 import FormParent from './components/FormParent';
 import FormSearch from './components/FormSearch';
+import SignUp from './components/SignUp'
 
 const App = () =>
   <Router>
+    <body>
     <div>
       <Nav />
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/login" component={LoginPage} />
-        <Route exact path="/formdog" component={FormDog} />
+        <Route exact path="/signup" component={SignUp} />
+        <Route exact path="/formdog" component={CreatedDogProfilePage} />
         <Route exact path="/formparent" component={FormParent} />
         <Route exact path="/formsearch" component={FormSearch} />
         <Route exact path="/searchresults" component={SearchResultsPage} />
         <Route exact path="/playmate" component={PlayMateDescriptionPage} />
-        <Route exact path="/viewprofile" component={CreatedDogProfilePage} />
-        
+        <Route exact path="/viewprofile" component={PlayMateDescriptionPage} />
       </Switch>
       <Footer />
     </div>
+    </body>
   </Router>;
 
 export default App;
