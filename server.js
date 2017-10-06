@@ -21,7 +21,7 @@ app.use(session({ secret: "keyboard cat", resave: true, saveUninitialized: true 
 app.use(passport.initialize());
 app.use(passport.session());
 
-require("./routes/application.js")(app);
+require("./routes/application.js")(app)
 // require("./routes/home.js")(app);
 // require("./routes/index.js")(app);
 // require("./routes/user.js")(app);
