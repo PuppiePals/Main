@@ -34,6 +34,8 @@ const SignUp = () =>
 
               <br />
 
+              <a href="/formdog" className="btn btn-primary">Register</a>
+
             </form>
       
           </div>
