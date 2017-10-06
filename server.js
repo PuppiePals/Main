@@ -14,6 +14,7 @@ var app = express();
 // Configure body parser for AJAX requests
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(express.static("client/build/pages/login"));
 
 app.use(express.static("client/public"));
 
