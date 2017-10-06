@@ -1,5 +1,6 @@
 var db = require('../models')
 
+///Do we need to wrap this whole thing in a module.exports?///
 exports.signUp = function(req, res) {
 	res.render("signup.ejs");
 }
