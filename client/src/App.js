@@ -5,7 +5,7 @@ import LoginPage from './pages/login';
 import HomePage from './pages/home';
 import PlayMateDescriptionPage from './pages/detailedplaymatedescription';
 import CreatedDogProfilePage from './pages/createdogprofile';
-import SearchResultsPage from './pages/searchresultspage';
+import SearchResults from './pages/searchresultspage';
 import Nav from './components/Navbar';
 import Footer from './components/Footer';
 import FormDog from './components/FormDog';
@@ -25,7 +25,7 @@ const App = () =>
         <Route exact path="/formdog" component={CreatedDogProfilePage} />
         <Route exact path="/formparent" component={FormParent} />
         <Route exact path="/formsearch" component={FormSearch} />
-        <Route exact path="/searchresults" component={SearchResultsPage} />
+        <Route exact path="/searchresults" component={SearchResults} />
         <Route exact path="/playmate" component={PlayMateDescriptionPage} />
         <Route exact path="/viewprofile" component={PlayMateDescriptionPage} />
       </Switch>

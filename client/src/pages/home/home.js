@@ -6,16 +6,13 @@ class HomePage extends Component {
     return (
       <div className="container">
         <div className="row" id="upperrow"> 
-          <div className="col-md-6" id="welcome">
-              
-              <h2>Welcome to </h2>
-              <br />
-              <h1>PuppyPals </h1>
+          <div className="col-md-7" id="welcome">
+            <br/>
+            PuppyPals
           </div>
                          
-          <div className="col-md-6">
-            <img src="" /> 
-            <h6>Insert Image Here</h6>
+          <div className="col-md-5">
+            <img src="http://res.cloudinary.com/time2emit/image/upload/v1507255761/play2_bktdj9.png" width="300" height="300" />
           </div>        
         </div>
         
