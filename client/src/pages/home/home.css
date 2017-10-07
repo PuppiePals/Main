@@ -6,6 +6,10 @@ h2 {
 	text-align: center;
 }
 
+#titleblock {
+	margin: 0px;
+}
+
 #welcome {
 	padding-left: 55px;
 	color: #DCB239;
