@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import FormDog from "../../components/FormDog/FormDog";
 
-class CreatedDogProfilePage extends Component {
+class CreateDogProfilePage extends Component {
   render() {
     return (  	
       <FormDog />
@@ -10,4 +10,4 @@ class CreatedDogProfilePage extends Component {
 }
 
 
-export default CreatedDogProfilePage;
+export default CreateDogProfilePage;

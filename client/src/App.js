@@ -4,7 +4,7 @@ import './App.css';
 import LoginPage from './pages/login';
 import HomePage from './pages/home';
 import PlayMateDescriptionPage from './pages/detailedplaymatedescription';
-import CreatedDogProfilePage from './pages/createdogprofile';
+import CreateDogProfilePage from './pages/createdogprofile';
 import SearchResults from './pages/searchresultspage';
 import Nav from './components/Navbar';
 import Footer from './components/Footer';
@@ -22,7 +22,7 @@ const App = () =>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/login" component={LoginPage} />
         <Route exact path="/signup" component={SignUp} />
-        <Route exact path="/formdog" component={CreatedDogProfilePage} />
+        <Route exact path="/formdog" component={CreateDogProfilePage} />
         <Route exact path="/formparent" component={FormParent} />
         <Route exact path="/formsearch" component={FormSearch} />
         <Route exact path="/searchresults" component={SearchResults} />

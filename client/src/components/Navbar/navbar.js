@@ -16,14 +16,9 @@ const Navbar = () =>
 	          		<a className="nav-link" href="/viewprofile">View Profile</a>
 	      		</li>
 	   			<li className="nav-item">
-	          		<a className="nav-link" href="/formdog">Edit Dog Profile</a>
-	      		</li><li className="nav-item">
-	          		<a className="nav-link" href="/formparent">Edit Parent Profile</a>
-	      		</li>
+	          		<a className="nav-link" href="/formdog">Create Dog Profile</a>
+	          	</li>
 
-	       		<li className="nav-item">
-	        		<a className="nav-link" href="/signout">Sign Out</a>
-	      		</li>
 	       	</ul>
 	    
 		    <form className="form-inline my-2 my-lg-0">

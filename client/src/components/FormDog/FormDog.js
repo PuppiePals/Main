@@ -1,6 +1,7 @@
 import React from "react";
+import axios from "axios";
 
-const FormDog = () =>
+const FormDog = props =>
 
   <div className="container col-6">
     <div className="panel panel-default">
@@ -17,7 +18,7 @@ const FormDog = () =>
             <form id="dogprofile">
               <label htmlFor="dogname">Name: </label>
               <div className="col-4">
-                <input className="form-control" type="text" id="dogname" size = "2" maxLength = "25"></input>
+                <input className="form-control" type="text" id="dogname" size = "2" maxLength = "25" {...props} />
               </div>              
       
               <label htmlFor="dogage">Age: </label>
