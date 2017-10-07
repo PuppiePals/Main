@@ -7,19 +7,26 @@ h2 {
 }
 
 #welcome {
-	padding: 10px;
-	color: #FFA500;
+	padding-left: 55px;
+	color: #DCB239;
+	font-family: 'Russo One', sans-serif;
+	font-size: 100px;
 }
 
 #upperrow {
 	margin-top: 20px;
 	margin-bottom: 20px;
+	margin-left: 0px;
+	margin-right: 0px;
 	height: 300px;
-	background: #00FFFF;
+	background: #DF744A;
 }
 
 #lowerrow {
-	color: #800000;
 	margin-top: 40px;
 	margin-bottom: 20px;
+	padding-left: 20px;
+	color: #DF744A;
+	text-align: center;
+
 }
