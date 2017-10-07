@@ -32,8 +32,7 @@ module.exports = function(app) {
 	            	//Need to determine the path for the next page to redirect to///
 	       });
     	});
-
-	};
+};
 
 
 

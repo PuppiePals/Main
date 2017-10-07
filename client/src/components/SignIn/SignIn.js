@@ -23,7 +23,7 @@ const SignIn = () =>
               <label htmlFor="password">Password:</label>
               <input className="form-control" type="text" id="parentlastname"></input>
 
-              <a href="/formdog" className="btn btn-primary">Log In</a>
+              <a href="/formsearch" className="btn btn-primary">Log In</a>
 
               <h3> No Account Yet? Click Sign Up!</h3>
 

@@ -28,7 +28,7 @@ handleFormSubmit = event => {
     if (this.state.Dog_Name) {
       API.postDog({
         Dog_Name: this.state.Dog_Name,
-        Age: this.state.Age,
+        Age: this.state.Age,  
         Size: this.state.Size,
         Sex: this.state.Sex,
   		Personality: this.state.Personality      
@@ -54,28 +54,37 @@ handleFormSubmit = event => {
         
             <form id="dogprofile">
               <label htmlFor="dogname">Name: </label>
-              <div className="col-4">
+              <div className="col-6">
                 <input className="form-control" type="text" id="dogname" size = "2" maxLength = "25" />
               </div>              
-      
+               
+                <br />
               <label htmlFor="dogage">Age: </label>
-              <div className="col-4">
+              <div className="col-6">
                 <input className="form-control" 
                 type="text" 
                 id="dogage" 
                 maxLength = "2" 
-                value=""
+                // value=""
                />
+              </div>
+
+                <br />
+                <div className="url">
+                <label htmlFor="picUrl">Upload an image URL: </label>
+                <div className="col-6">
+                <input className="form-control" type="text" id="url" />
+              </div>
               </div>
       
               <div className="doggender">
                 <br />
                 <h6 className="card-text">Gender: </h6> 
                 <label className="radio-inline"> 
-                  <input type="radio" id="dogmale" />    Male    .
+                  <input type="radio" name="gender" id="dogmale" />    Male    .
                 </label>
                 <label className="radio-inline"> 
-                  <input type="radio" id="dogfemale" />    Female  
+                  <input type="radio" name="gender" id="dogfemale" />    Female  
                 </label>
               </div>
 
@@ -83,13 +92,13 @@ handleFormSubmit = event => {
                 <br />
                 <h6 className="card-text">Size: </h6>
                 <label className="radio-inline">
-                  <input type="radio" id="dogsmall" />    Small (1-20 lbs)    . 
+                  <input type="radio" name="size" id="dogsmall" />    Small (1-20 lbs)    . 
                 </label>
                 <label className="radio-inline"> 
-                  <input type="radio" id="dogmedium" />    Medium (21-60 lbs)    .
+                  <input type="radio" name="size" id="dogmedium" />    Medium (21-60 lbs)    .
                 </label>
                 <label className="radio-inline"> 
-                  <input type="radio" id="doglarge" />    Large (61 lbs and up)  
+                  <input type="radio" name="size" id="doglarge" />    Large (61 lbs and up)  
                 </label>
                </div>
 
@@ -100,8 +109,14 @@ handleFormSubmit = event => {
               </div>
 
               <br />
+              <div align="left">
+                <a href="/formparent" className="btn btn-primary" >Previous</a>
+              </div>
+          
+
+              <br />
               <div align="right">
-                <a href="/formparent" className="btn btn-primary" >Next</a>
+                <a href="/formsearch" className="btn btn-primary" >Next</a>
               </div>
             </form>
           
