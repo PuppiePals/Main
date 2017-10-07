@@ -24,7 +24,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 require("./routes/Dog-Routes.js")(app);
-// require("./routes/User-Routes.js")(app);
+require("./routes/User-Routes.js");
 
 
 var sequelizeForce = true;

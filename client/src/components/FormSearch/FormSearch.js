@@ -51,7 +51,7 @@ const FormSearch = () =>
                   <br />
                   <div className="row">
                     <div className="col-6">
-                      <a className="btn btn-secondary float-left" href="/formparent" role="button">Previous</a>
+                      <a className="btn btn-secondary float-left" href="/login" role="button">Previous</a>
                     </div>
                   
                     <div className="col-6">  
