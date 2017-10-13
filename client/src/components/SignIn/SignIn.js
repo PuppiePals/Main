@@ -23,10 +23,14 @@ const SignIn = () =>
               <label htmlFor="password">Password:</label>
               <input className="form-control" type="text" id="parentlastname"></input>
 
+              <br />
+
               <a href="/formsearch" className="btn btn-primary">Log In</a>
 
-              <h3> No Account Yet? Click Sign Up!</h3>
+              <br />
+              <br />
 
+              <h5> No Account Yet? Click Sign Up!</h5>
               <a href="/formparent" className="btn btn-primary">Sign Up</a>
 
               <br />

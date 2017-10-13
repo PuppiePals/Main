@@ -109,14 +109,14 @@ handleFormSubmit = event => {
               </div>
 
               <br />
-              <div align="left">
-                <a href="/formparent" className="btn btn-primary" >Previous</a>
-              </div>
-          
+              <div className="row">
+                <div className="col-6">
+                  <a href="/formparent" className="btn btn-primary float-left" >Previous</a>
+                </div>
 
-              <br />
-              <div align="right">
-                <a href="/formsearch" className="btn btn-primary" >Next</a>
+                <div align="col-6">
+                  <a href="/formsearch" className="btn btn-primary float-right" >Next</a>
+                </div>
               </div>
             </form>
           

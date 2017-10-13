@@ -17,11 +17,20 @@ const SearchResults = () =>
 
           	<h1> Select a Playmate! </h1>
 
-          	<img src="http://res.cloudinary.com/time2emit/image/upload/v1507161728/Jack_j5ahed.jpg" />
+          	<img src ="http://res.cloudinary.com/time2emit/image/upload/v1507161728/Jack_j5ahed.jpg" />
 
           	<div className = "dogName">Lisa</div>
   			<div className = "mf">Male</div>
   			<div className = "age">2 Years</div>
+                    <div className="zip">94110</div>
+              <br />
+
+              <img src="http://res.cloudinary.com/time2emit/image/upload/v1507161728/ralph_jpxpyw.jpg" />
+
+                    <div className = "dogName">Ted</div>
+                            <div className = "mf">Male</div>
+                            <div className = "age">2 Years</div>
+                            <div className = "zip">94110</div>
                 
           </div>
         </div>
