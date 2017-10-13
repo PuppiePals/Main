@@ -22,10 +22,10 @@ const FormSearch = () =>
                     <br />
                     <h6 className="card-text">Gender: </h6> 
                     <label className="radio-inline"> 
-                      <input type="radio" id="searchmale" />    Male    .
+                      <input type="radio" id="searchmale" name="gender"/>    Male    .
                     </label>
                     <label className="radio-inline"> 
-                      <input type="radio" id="searchfemale" />    Female  
+                      <input type="radio" id="searchfemale" name="gender"/>    Female  
                     </label>
                   </div>
 
@@ -33,13 +33,13 @@ const FormSearch = () =>
                     <br />
                     <h6 className="card-text">Size: </h6>
                     <label className="radio-inline">
-                      <input type="radio" id="searchsmall" />    Small (1-20 lbs)    . 
+                      <input type="radio" id="searchsmall" name="size"/>    Small (1-20 lbs)    . 
                     </label>
                     <label className="radio-inline"> 
-                      <input type="radio" id="searchmedium" />    Medium (21-60 lbs)    .
+                      <input type="radio" id="searchmedium" name="size"/>    Medium (21-60 lbs)    .
                     </label>
                     <label className="radio-inline"> 
-                      <input type="radio" id="searchlarge" />    Large (61 lbs and up)  
+                      <input type="radio" id="searchlarge" name="size"/>    Large (61 lbs and up)  
                     </label>
                   </div>
 
